@@ -1,0 +1,104 @@
+.carousel-header {
+  border-left: 2.5vw solid white;
+  border-right: 2.5vw solid white;
+}
+
+.nav-header {
+  border-left: 2.5vw solid white;
+  border-right: 2.5vw solid white;
+}
+
+.nav-title {
+  color: #000;
+  text-align: center;
+  font-family: Beau Rivage;
+  font-size: 1.8vw;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+}
+
+.nav-title2 {
+  color: rgba(137, 154, 110, 0.9);
+}
+
+body {
+  font-family: Inika;
+}
+
+.title-1 {
+  color: rgba(255, 255, 255, 0.73);
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 570;
+  line-height: normal;
+}
+
+.title-2 {
+  color: #fff;
+  font-size: 5.5vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+
+.car-btn {
+  width: 11vw;
+  height: 2.5vw;
+  font-size: 0.85vw;
+  font-weight: 700;
+}
+
+.dest {
+  color: #000;
+  text-align: center;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.posts-title {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.posts-title2 {
+  color: rgba(0, 0, 0, 0.59);
+  text-align: center;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 7.2px;
+}
+
+.ptitle-2 {
+  color: #ba9478;
+}
+
+.row {
+  border-left: 2.5vw solid white;
+  border-right: 2.5vw solid white;
+}
+
+.pst-date {
+  font-size: 1.5vw;
+  color: rgba(0, 0, 0, 0.32);
+}
+
+.pst-text {
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 0.99vw;
+}
+
+.pst-btn {
+  font-size: 1vw;
+  letter-spacing: 2.34px;
+  text-transform: uppercase;
+}
