@@ -22,7 +22,7 @@
   color: rgba(137, 154, 110, 0.9);
 }
 
-body {
+html, body {
   font-family:Inika;
   overflow-x: hidden;
 }
@@ -120,17 +120,17 @@ body {
 }
 
 .sec-img {
-  height:35vh;
+  opacity: 0.53;
+  height:45vh;
   width: 100%;
   margin-top: 50px;
 }
 
 .sec-icon {
-  opacity: 0.45;
-  margin-right: 11.5vw;
-  margin-top: 18vh;
-  width: 8vw;
-  height: 8vh;
+  opacity: 0.5;
+  margin-right: 12vw;
+  width: 10vw;
+  height: 10vh;
 }
 
 .sec-icon:hover{
@@ -138,9 +138,25 @@ body {
 }
 
 .sec-icons {
-  margin-left: 6.5vw;
+  margin-top: 22vh;
+  margin-left: 7.5vw;
   width: 97vw;
   height: 15vh;
   display: flex;
   justify-content: center;
 }
+
+.tips{
+  margin-top: 56.5vh;
+}
+
+.carousel-item-tips{
+  border-left: 10vw solid white;
+  border-right: 10vw solid white;
+  border-bottom: 2vw solid white;
+  border-top: 2vw solid white;
+}
+
+.carousel-tips{
+  width: 118vw;
+} 

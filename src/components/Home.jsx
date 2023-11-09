@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import Posts from "./Posts";
 import Section from "./Section";
+import Tips from "./Tips";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Posts />
       <Section />
+      <Tips/>
     </>
   );
 }

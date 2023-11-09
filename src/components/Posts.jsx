@@ -196,7 +196,7 @@ export default function Posts() {
             </div>
           </div>
         </div>
-        <div className="d-flex justify-content-center p-2">
+        <div className="d-flex justify-content-center p-5">
           <button className="border-0 bg-transparent fw-bold">
             <span className="ld-pst-btn">Load More</span>
           </button>
