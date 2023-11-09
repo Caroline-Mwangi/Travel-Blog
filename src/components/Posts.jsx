@@ -1,7 +1,7 @@
 export default function Posts() {
   return (
     <>
-      <div className="container-fluid mt-5 mb-5">
+      <div className="container-fluid">
         <div className="p-5">
           <div className="d-flex justify-content-center">
             <p className="posts-title">MY TRAVEL DIARY</p>
@@ -14,7 +14,7 @@ export default function Posts() {
           </div>
         </div>
 
-        <div className="row mt-3 mb-5">
+        <div className="row mt-2 mb-5">
           <div className="col-xl-5 col-lg-5 col-md-4 col-sm-6 col-xs-12">
             <img src="images/post1.jpg" className="w-100 h-100 rounded" />
           </div>
@@ -195,6 +195,11 @@ export default function Posts() {
               </button>
             </div>
           </div>
+        </div>
+        <div className="d-flex justify-content-center p-2">
+          <button className="border-0 bg-transparent fw-bold">
+            <span className="ld-pst-btn">Load More</span>
+          </button>
         </div>
       </div>
     </>

@@ -8,13 +8,13 @@ export default function Hero() {
   }, []);
   return (
     <>
-      <div class="container-fluid">
+      <div class="container-fluid ">
         <div
           id="carouselExampleInterval"
-          class="carousel slide "
+          class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner carousel-header position-relative">
+          <div class="carousel-inner carousel-header position-relative ">
             <div className="z-1 position-absolute w-100 h-100 bg-black bg-opacity-50"></div>
             <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
               <p className="carousel-par">
@@ -31,14 +31,14 @@ export default function Hero() {
                 </span>
               </p>
             </div>
-            <div class="carousel-item active" data-bs-interval="5500">
+            <div class="carousel-item active" data-bs-interval="5000">
               <img src="images/hero1.jpg" class="d-block w-100" />
             </div>
-            <div class="carousel-item" data-bs-interval="5500">
+            <div class="carousel-item" data-bs-interval="5000">
               <div className="position-absolute w-100 h-100 bg-black bg-opacity-50"></div>
               <img src="images/hero2.jpg" class="d-block w-100" />
             </div>
-            <div class="carousel-item" data-bs-interval="5500">
+            <div class="carousel-item" data-bs-interval="5000">
               <div className="position-absolute w-100 h-100 bg-black bg-opacity-50"></div>
               <img src="images/hero3.jpg" class="d-block w-100" />
             </div>

@@ -23,7 +23,8 @@
 }
 
 body {
-  font-family: Inika;
+  font-family:Inika;
+  overflow-x: hidden;
 }
 
 .title-1 {
@@ -101,4 +102,45 @@ body {
   font-size: 1vw;
   letter-spacing: 2.34px;
   text-transform: uppercase;
+}
+
+.pst-btn:hover{
+  color: rgba(103, 128, 87, 0.9);;
+}
+
+.ld-pst-btn {
+  font-size: 1.5vw;
+  letter-spacing: 2.34px;
+  text-transform: uppercase;
+  color: rgba(103, 128, 87, 0.9);
+}
+
+.ld-pst-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.sec-img {
+  height:35vh;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.sec-icon {
+  opacity: 0.45;
+  margin-right: 11.5vw;
+  margin-top: 18vh;
+  width: 8vw;
+  height: 8vh;
+}
+
+.sec-icon:hover{
+  opacity: 0.35;
+}
+
+.sec-icons {
+  margin-left: 6.5vw;
+  width: 97vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
 }
