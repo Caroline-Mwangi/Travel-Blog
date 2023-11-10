@@ -29,7 +29,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips1.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -44,7 +44,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips2.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -59,7 +59,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips3.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -81,7 +81,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips2.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -95,7 +95,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips3.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -109,7 +109,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips1.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -127,7 +127,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips3.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -141,7 +141,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips1.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">
@@ -155,7 +155,7 @@ export default function Tips() {
                     <div class="card">
                       <img src="images/tips2.jpg" class="card-img-top" />
                       <div class="card-body">
-                        <h5 class="card-title fw-bold fs-2 text-uppercase">
+                        <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
                         <p class="card-text fs-5 opacity-50">

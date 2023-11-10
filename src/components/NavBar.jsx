@@ -4,7 +4,7 @@ export default function NavBar() {
       <div className="container-fluid nav-header ">
         <nav class="navbar navbar-expand-lg bg-body-white">
           <div class="container-fluid">
-            <a class="navbar-brand nav-title" href="#">
+            <a class="navbar-brand nav-title" href="/">
               Travel<span className="nav-title2">Diary</span> 
             </a>
             <button

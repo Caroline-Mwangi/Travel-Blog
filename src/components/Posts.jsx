@@ -57,7 +57,12 @@ export default function Posts() {
                 maxime optio...
               </p>
               <button className="border-0 bg-transparent fw-bold">
-                <span className="pst-btn">Read More</span>
+                <a
+                  href="/post"
+                  className="link-underline-light link-underline link-underline-opacity-0"
+                >
+                  <span className="pst-btn ">Read More</span>
+                </a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="2vw"
@@ -115,7 +120,12 @@ export default function Posts() {
                 maxime optio...
               </p>
               <button className="border-0 bg-transparent fw-bold">
-                <span className="pst-btn">Read More</span>
+                <a
+                  href="/post"
+                  className="link-underline-light link-underline link-underline-opacity-0"
+                >
+                  <span className="pst-btn ">Read More</span>
+                </a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="2vw"
@@ -179,7 +189,12 @@ export default function Posts() {
                 maxime optio...
               </p>
               <button className="border-0 bg-transparent fw-bold">
-                <span className="pst-btn">Read More</span>
+                <a
+                  href="/post"
+                  className="link-underline-light link-underline link-underline-opacity-0"
+                >
+                  <span className="pst-btn ">Read More</span>
+                </a>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="2vw"

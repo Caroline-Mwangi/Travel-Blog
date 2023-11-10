@@ -22,8 +22,9 @@
   color: rgba(137, 154, 110, 0.9);
 }
 
-html, body {
-  font-family:Inika;
+html,
+body {
+  font-family: Inika;
   overflow-x: hidden;
 }
 
@@ -102,10 +103,11 @@ html, body {
   font-size: 1vw;
   letter-spacing: 2.34px;
   text-transform: uppercase;
+  color: #000;
 }
 
-.pst-btn:hover{
-  color: rgba(103, 128, 87, 0.9);;
+.pst-btn:hover {
+  color: rgba(103, 128, 87, 0.9);
 }
 
 .ld-pst-btn {
@@ -121,7 +123,7 @@ html, body {
 
 .sec-img {
   opacity: 0.53;
-  height:45vh;
+  height: 45vh;
   width: 100%;
   margin-top: 50px;
 }
@@ -133,7 +135,7 @@ html, body {
   height: 10vh;
 }
 
-.sec-icon:hover{
+.sec-icon:hover {
   opacity: 0.35;
 }
 
@@ -146,17 +148,18 @@ html, body {
   justify-content: center;
 }
 
-.tips{
+.tips {
   margin-top: 56.5vh;
 }
 
-.carousel-item-tips{
+.carousel-item-tips {
   border-left: 10vw solid white;
   border-right: 10vw solid white;
   border-bottom: 2vw solid white;
   border-top: 2vw solid white;
 }
 
-.carousel-tips{
+.carousel-tips {
   width: 118vw;
-} 
+}
+

@@ -13,6 +13,7 @@ export default function Hero() {
           id="carouselExampleInterval"
           class="carousel slide"
           data-bs-ride="carousel"
+          data-bs-pause = "false"
         >
           <div class="carousel-inner carousel-header position-relative ">
             <div className="z-1 position-absolute w-100 h-100 bg-black bg-opacity-50"></div>
