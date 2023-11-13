@@ -44,12 +44,12 @@ export default function NavBar() {
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a class="dropdown-item" href="/africa">
                         Africa
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a class="dropdown-item" href="/europe">
                         Europe
                       </a>
                     </li>
