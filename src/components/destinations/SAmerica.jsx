@@ -79,6 +79,30 @@ export default function SAmerica() {
           pariatur sunt, error in sapiente repudiandae possimus beatae!
         </p>
       </div>
+
+      <div className="container">
+        <div className="row dest-row mt-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/s-america1.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/s-america5.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/s-america3.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/s-america2.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/s-america4.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/s-america6.jpg" />
+          </div>
+          
+        </div>
+      </div>
     </>
   );
 }

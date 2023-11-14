@@ -79,6 +79,30 @@ export default function Antarctica() {
           pariatur sunt, error in sapiente repudiandae possimus beatae!
         </p>
       </div>
+
+      <div className="container">
+        <div className="row dest-row mt-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/ant1.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/ant5.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/ant3.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/ant2.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/ant4.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/ant6.jpg" />
+          </div>
+          
+        </div>
+      </div>
     </>
   );
 }

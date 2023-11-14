@@ -79,6 +79,30 @@ export default function Africa() {
           pariatur sunt, error in sapiente repudiandae possimus beatae!
         </p>
       </div>
+
+      <div className="container">
+        <div className="row dest-row mt-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/africa1.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/africa5.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/africa3.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/africa2.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/africa4.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/africa6.jpg" />
+          </div>
+          
+        </div>
+      </div>
     </>
   );
 }

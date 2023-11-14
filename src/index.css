@@ -163,3 +163,11 @@ body {
   width: 118vw;
 }
 
+.dest-row img{
+  width: 17vw;
+  height: 15vw;
+}
+
+.dest-row{
+  margin-left: -2vw;
+}

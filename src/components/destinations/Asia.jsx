@@ -79,6 +79,30 @@ export default function Asia() {
           pariatur sunt, error in sapiente repudiandae possimus beatae!
         </p>
       </div>
+
+      <div className="container">
+        <div className="row dest-row mt-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/asia1.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/asia5.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/asia3.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/asia2.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/asia4.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/asia6.jpg" />
+          </div>
+          
+        </div>
+      </div>
     </>
   );
 }

@@ -79,6 +79,29 @@ export default function NAmerica() {
           pariatur sunt, error in sapiente repudiandae possimus beatae!
         </p>
       </div>
+
+      <div className="container">
+        <div className="row dest-row mt-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/n-america1.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/n-america5.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/n-america3.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/n-america2.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/n-america4.jpg" />
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+            <img src="images/destinations/n-america6.jpg" />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
