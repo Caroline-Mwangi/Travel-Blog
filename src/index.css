@@ -163,11 +163,20 @@ body {
   width: 118vw;
 }
 
-.dest-row img{
+.dest-row img {
   width: 17vw;
   height: 15vw;
 }
 
-.dest-row{
+.dest-row {
   margin-left: -2vw;
+}
+
+.overlay {
+  width: 17vw;
+}
+
+.overtext{
+  top: calc(3.5vw + 4.9vh);
+  left: calc(3.5vw + 3vh);
 }

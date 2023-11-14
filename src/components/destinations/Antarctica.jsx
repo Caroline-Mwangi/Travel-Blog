@@ -8,7 +8,7 @@ export default function Antarctica() {
   }, []);
   return (
     <>
-      <div className="container">
+      <div className="container-fluid">
         <div
           id="carouselExampleInterval"
           class="carousel slide"
@@ -82,25 +82,54 @@ export default function Antarctica() {
 
       <div className="container">
         <div className="row dest-row mt-5">
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
+            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
+            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
+              <p className="fw-bold fs-4">THE POST TITLE</p>
+              <p className="text-secondary fs-5">The date</p>
+            </div>
             <img src="images/destinations/ant1.jpg" />
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
+            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
+            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
+              <p className="fw-bold fs-4">THE POST TITLE</p>
+              <p className="text-secondary fs-5">The date</p>
+            </div>
             <img src="images/destinations/ant5.jpg" />
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
+            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
+            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
+              <p className="fw-bold fs-4">THE POST TITLE</p>
+              <p className="text-secondary fs-5">The date</p>
+            </div>
             <img src="images/destinations/ant3.jpg" />
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
+            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
+            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
+              <p className="fw-bold fs-4">THE POST TITLE</p>
+              <p className="text-secondary fs-5">The date</p>
+            </div>
             <img src="images/destinations/ant2.jpg" />
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
+            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
+            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
+              <p className="fw-bold fs-4">THE POST TITLE</p>
+              <p className="text-secondary fs-5">The date</p>
+            </div>
             <img src="images/destinations/ant4.jpg" />
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5">
+          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
+            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
+            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
+              <p className="fw-bold fs-4">THE POST TITLE</p>
+              <p className="text-secondary fs-5">The date</p>
+            </div>
             <img src="images/destinations/ant6.jpg" />
           </div>
-          
         </div>
       </div>
     </>
