@@ -176,7 +176,38 @@ body {
   width: 17vw;
 }
 
-.overtext{
+.overtext {
   top: calc(3.5vw + 4.9vh);
   left: calc(3.5vw + 3vh);
+}
+
+.image-cont {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-cont img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-cont::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.overtext2 {
+  top: 45%;
+  left:0%;
+  display: flex;
+  font-size: 6vh 8vw;
+  text-align: center;
+  font-weight: 1500;
 }

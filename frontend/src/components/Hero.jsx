@@ -13,7 +13,7 @@ export default function Hero() {
           id="carouselExampleInterval"
           class="carousel slide"
           data-bs-ride="carousel"
-          data-bs-pause = "false"
+          data-bs-pause="false"
         >
           <div class="carousel-inner carousel-header position-relative ">
             <div className="z-1 position-absolute w-100 h-100 bg-black bg-opacity-50"></div>
@@ -27,7 +27,7 @@ export default function Hero() {
                 <br />
                 <span>
                   <button className="btn btn-light mt-3 car-btn">
-                    EXPLORE POSTS
+                    <a href="/posts" className="link-underline link-underline-opacity-0 text-black">EXPLORE POSTS</a>
                   </button>
                 </span>
               </p>
