@@ -3,6 +3,36 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function AddPost() {
+  const [image, setImage] = useState(null);
+  const [title, setTitle] = useState("");
+  const [continent, setContinent] = useState("");
+  const [location, setLocation] = useState("");
+  const [content, setContent] = useState("");
+
+  const navigate = useNavigate();
+
+  const AddPostInfo = async () => {
+    let field = new FormData();
+
+    field.append("title", title);
+    field.append("continent", continent);
+    field.append("location", location);
+    field.append("content", content);
+
+    if (image != null) {
+        field.append("image", image);
+    }
+
+    await axios({
+        method: "post",
+        url: "http://127.0.0.1:8000/posts/",
+        data: field,
+
+    }).then((response) => {
+        navigate("/posts");
+    });
+  };
+
   return (
     <>
       <button
@@ -41,32 +71,38 @@ export default function AddPost() {
               <input
                 type="file"
                 className="form-control"
+                accept=".png, .jpeg, .jpg"
                 placeholder="Image"
                 name="image"
+                onChange={(e) => setImage(e.target.files[0])}
               />
               <input
                 type="text"
                 className="form-control mt-3 mb-3 "
                 placeholder="Blog Title..."
                 name="title"
+                onChange={(e) => setTitle(e.target.value)}
               />
               <input
                 type="text"
                 className="form-control mt-3 mb-3 "
                 placeholder="Continent..."
                 name="continent"
+                onChange={(e) => setContinent(e.target.value)}
               />
               <input
                 type="text"
                 className="form-control mt-3 mb-3 "
                 placeholder="Location..."
                 name="location"
+                onChange={(e) => setLocation(e.target.value)}
               />
               <textarea
                 className="form-control mt-3 mb-3 "
                 placeholder="Content..."
                 name="content"
                 rows="50"
+                onChange={(e) => setContent(e.target.value)}
               />
             </div>
             <div class="modal-footer">
@@ -77,7 +113,7 @@ export default function AddPost() {
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary">
+              <button type="button" class="btn btn-primary" onClick={AddPostInfo} data-bs-dismiss="modal">
                 Add Post
               </button>
             </div>
