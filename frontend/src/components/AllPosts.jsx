@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import AddPost from "./AddPost";
 
 export default function AllPosts() {
@@ -16,7 +15,7 @@ export default function AllPosts() {
 
   return (
     <>
-      <div className="p-5">
+      <div className="p-4">
         <div className="d-flex justify-content-center">
           <p className="posts-title">MY TRAVEL DIARY</p>
         </div>
@@ -34,7 +33,7 @@ export default function AllPosts() {
       <div className="container-fluid">
         <div className="row">
           {posts.map((post) => (
-            <div className="col-md-4">
+            <div className="col-md-4 mb-4">
               <img src={post.image} className="w-100 h-100" />
             </div>
           ))}

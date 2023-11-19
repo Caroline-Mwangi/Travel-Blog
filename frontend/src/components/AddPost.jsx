@@ -20,16 +20,15 @@ export default function AddPost() {
     field.append("content", content);
 
     if (image != null) {
-        field.append("image", image);
+      field.append("image", image);
     }
 
     await axios({
-        method: "post",
-        url: "http://127.0.0.1:8000/posts/",
-        data: field,
-
+      method: "post",
+      url: "http://127.0.0.1:8000/posts/",
+      data: field,
     }).then((response) => {
-        navigate("/posts");
+      navigate("/posts");
     });
   };
 
@@ -37,7 +36,7 @@ export default function AddPost() {
     <>
       <button
         type="button"
-        class="btn btn-link link-underline link-underline-opacity-0 opacity-50 fw-bold fs-5 link-underline-opacity-50-hover link-success"
+        class="btn btn-link link-underline link-underline-opacity-0 opacity-75 fw-bold fs-5 link-underline-opacity-50-hover link-success"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
@@ -70,7 +69,7 @@ export default function AddPost() {
               <img src=" " alt="" />
               <input
                 type="file"
-                className="form-control"
+                className="form-control border-black"
                 accept=".png, .jpeg, .jpg"
                 placeholder="Image"
                 name="image"
@@ -78,27 +77,27 @@ export default function AddPost() {
               />
               <input
                 type="text"
-                className="form-control mt-3 mb-3 "
+                className="form-control mt-3 mb-3 border-black "
                 placeholder="Blog Title..."
                 name="title"
                 onChange={(e) => setTitle(e.target.value)}
               />
               <input
                 type="text"
-                className="form-control mt-3 mb-3 "
+                className="form-control mt-3 mb-3 border-black "
                 placeholder="Continent..."
                 name="continent"
                 onChange={(e) => setContinent(e.target.value)}
               />
               <input
                 type="text"
-                className="form-control mt-3 mb-3 "
+                className="form-control mt-3 mb-3 border-black "
                 placeholder="Location..."
                 name="location"
                 onChange={(e) => setLocation(e.target.value)}
               />
               <textarea
-                className="form-control mt-3 mb-3 "
+                className="form-control mt-3 mb-3 border-black"
                 placeholder="Content..."
                 name="content"
                 rows="50"
@@ -113,7 +112,12 @@ export default function AddPost() {
               >
                 Close
               </button>
-              <button type="button" class="btn btn-primary" onClick={AddPostInfo} data-bs-dismiss="modal">
+              <button
+                type="button"
+                class="btn btn-primary"
+                onClick={AddPostInfo}
+                data-bs-dismiss="modal"
+              >
                 Add Post
               </button>
             </div>
