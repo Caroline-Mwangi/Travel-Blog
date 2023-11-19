@@ -12,6 +12,7 @@ import Antarctica from "./components/destinations/Antarctica";
 import Australia from "./components/destinations/Australia";
 import AllPosts from "./components/AllPosts";
 import AddPost from "./components/AddPost";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/australia" element={<Australia />} />
           <Route path="/posts" element={<AllPosts />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );

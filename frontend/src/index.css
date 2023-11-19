@@ -26,6 +26,7 @@ html,
 body {
   font-family: Inika;
   overflow-x: hidden;
+  height: 100%;
 }
 
 .title-1 {
@@ -215,4 +216,9 @@ body {
   font-size: 6vh 8vw;
   text-align: center;
   font-weight: 1500;
+}
+
+.foot {
+  margin-top: auto;
+  background-color: rgba(233, 244, 217, 0.4);;
 }
