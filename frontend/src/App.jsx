@@ -13,6 +13,7 @@ import Australia from "./components/destinations/Australia";
 import AllPosts from "./components/AllPosts";
 import AddPost from "./components/AddPost";
 import Footer from "./components/Footer";
+import DeletePost from "./components/deletePost";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/posts/:id" element={<Post />} />
+          <Route path="/delete" element={<DeletePost />} />
           <Route path="/africa" element={<Africa />} />
           <Route path="/europe" element={<Europe />} />
           <Route path="/asia" element={<Asia />} />
