@@ -55,7 +55,7 @@ export default function Posts() {
                       fill-opacity="0.32"
                     />
                   </svg>
-                  <span className="pst-date ms-2 fs-5">{post.date}</span>
+                  <span className="pst-date ms-2">{post.date}</span>
                 </p>
                 <h1 className="fw-bold fs-2">{post.title}</h1>
                 <p className="pst-text">{post.content}</p>

@@ -11,3 +11,11 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+class Tip(models.Model):
+    image = models.ImageField(upload_to='uploads/posts', null=False, blank=False)
+    title = models.CharField(max_length=200, null=False, blank=False)
+    content = models.TextField(null=False, blank=False)
+
+    def __str__(self):
+        return self.title

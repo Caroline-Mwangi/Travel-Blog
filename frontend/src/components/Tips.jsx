@@ -32,7 +32,7 @@ export default function Tips() {
                         <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
-                        <p class="card-text fs-5 opacity-50">
+                        <p class="card-text opacity-50">
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content...
                         </p>
@@ -47,7 +47,7 @@ export default function Tips() {
                         <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
-                        <p class="card-text fs-5 opacity-50">
+                        <p class="card-text opacity-50">
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content...
                         </p>
@@ -62,7 +62,7 @@ export default function Tips() {
                         <h5 class="card-title fw-bold fs-3 text-uppercase">
                           Some Kind Of Title Related To The Tip
                         </h5>
-                        <p class="card-text fs-5 opacity-50">
+                        <p class="card-text opacity-50">
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content...
                         </p>
