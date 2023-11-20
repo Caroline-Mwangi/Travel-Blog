@@ -1,9 +1,25 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+
 export default function Post() {
+  const [post, setPost] = useState([]);
+  const navigate = useNavigate();
+  const { id } = useParams();
+
+  const getAPost = async () => {
+    const { data } = await axios.get(`http://127.0.0.1:8000/posts/${id}/`);
+    setPost(data);
+  };
+
+  useEffect(() => {
+    getAPost();
+  }, []);
   return (
     <>
       <div className="container-fluid">
         <div className="container mb-4">
-          <img src="images/post1.jpg" class="d-block w-100 post-header mb-2" />
+          <img src={post.image} class="d-block w-100 post-header mb-2" />
           <div className="d-flex justify-content-between">
             <p>
               <svg
@@ -19,7 +35,7 @@ export default function Post() {
                   fill-opacity="0.32"
                 />
               </svg>
-              <span className="opacity-50 fs-5">November 12, 2020</span>
+              <span className="opacity-50 fs-5">{post.date}</span>
             </p>
             <p>
               <svg
@@ -35,94 +51,15 @@ export default function Post() {
                   fill-opacity="0.32"
                 />
               </svg>
-              <span className="opacity-50 fs-5">Nairobi, Kenya</span>
+              <span className="opacity-50 fs-5">{post.location}</span>
             </p>
           </div>
         </div>
 
         <div className="container">
-          <h1 className="fw-bold fs-1 text-center mt-4 mb-5">
-            SOME KIND OF TITLE RELATED TO THE POST
-          </h1>
+          <h1 className="fw-bold fs-1 text-center mt-4 mb-5">{post.title}</h1>
           <p className=" fs-5 opacity-75">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-            optio. Eaque voluptatum dignissimos distinctio, aliquid corporis
-            asperiores illum natus aliquam deserunt nihil. Atque impedit nostrum
-            adipisci eum necessitatibus reprehenderit aut. Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit. Pariatur ducimus, asperiores hic
-            voluptate dolor natus atque non perferendis labore voluptas ipsum
-            modi, ratione dolorem autem, esse itaque recusandae minima. Dolorum.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam,
-            voluptas sit placeat ipsam eius atque voluptatum! Officiis
-            blanditiis voluptatibus temporibus, maxime, magnam labore numquam
-            aliquid atque hic reiciendis fugiat natus?
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Perspiciatis delectus voluptatum repellat aliquam minima incidunt,
-            eligendi, nesciunt dolore maxime voluptates, cumque voluptate
-            doloribus enim sint laborum rem voluptatibus? Quas, fuga? Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Voluptatem aut
-            quod quaerat exercitationem? Sequi necessitatibus quaerat mollitia
-            id labore. Atque quasi sed nihil facilis voluptatum incidunt harum
-            nisi delectus obcaecati! Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Laborum animi mollitia totam obcaecati debitis
-            porro delectus, id deserunt accusamus nemo ad enim et doloremque
-            quaerat nam consectetur aliquam vero harum?
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quod
-            nihil quidem iste eum inventore illo animi repellendus placeat,
-            natus maiores tempore nemo officia minima fuga ea aspernatur nostrum
-            rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Accusamus quos, nemo tempora cum fugiat qui itaque nesciunt
-            consequatur consequuntur laudantium culpa repellendus dicta ipsum
-            odit voluptatum. Mollitia modi nam earum. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Dolores recusandae magni nobis sequi
-            quos asperiores expedita aut est quaerat nesciunt exercitationem
-            iure odio delectus, illo nemo voluptatibus sunt nisi! Iusto! Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Cumque iusto
-            veritatis aspernatur perspiciatis dolore culpa corporis, placeat aut
-            quae nulla sequi. Eligendi, similique delectus rerum culpa
-            distinctio nemo atque ut. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Doloremque quasi doloribus nobis ipsam explicabo
-            asperiores totam aut eaque sint, praesentium aliquid provident
-            dolorem alias voluptatem modi ex quas culpa ab! Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Asperiores natus omnis quae
-            possimus perferendis, tenetur a ipsam autem sunt reprehenderit
-            consequuntur explicabo sit iusto aut, non amet dolorem nam voluptas!
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            hic doloremque corrupti assumenda, quod excepturi perspiciatis odit
-            perferendis, similique cum quia eius voluptates, eum laudantium
-            natus blanditiis autem officia numquam. Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Voluptas maxime eos praesentium sit
-            unde eveniet quidem sequi a delectus accusamus rem perspiciatis
-            porro atque ex, aspernatur ipsam fugiat cum? Distinctio? Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Eos natus amet libero
-            ratione maiores enim, deserunt tenetur, similique hic odio
-            asperiores voluptatibus velit quibusdam delectus, fuga omnis
-            incidunt architecto sequi. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Facere vel ipsam deserunt, id enim libero possimus
-            totam perspiciatis, ratione quam accusamus cumque! Laudantium sed
-            perspiciatis velit unde ea voluptatibus sequi.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa,
-            tempora. Deserunt facere asperiores ullam adipisci alias, odio
-            ducimus quos officiis voluptas numquam quam ut error, sunt quas
-            architecto. Amet, error? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Praesentium eaque sunt accusamus obcaecati
-            aspernatur eligendi minus! Aut recusandae qui, rerum distinctio
-            obcaecati dolorum modi animi, natus hic incidunt, maxime quas? Lorem
-            ipsum, dolor sit amet consectetur adipisicing elit. Cumque omnis
-            obcaecati dignissimos excepturi quidem reprehenderit quos dolores
-            minima nam. In natus vitae labore sint eveniet animi cumque
-            perspiciatis obcaecati aperiam? Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. Quasi eius totam nostrum debitis,
-            distinctio cum recusandae ullam nisi laboriosam natus dolores alias
-            sequi numquam? Repellat cupiditate ipsam suscipit voluptatem neque?
+            {post.content}
             <br />
             <br />
             <div className="d-flex justify-content-between">
@@ -148,7 +85,7 @@ export default function Post() {
                     xmlns="http://www.w3.org/2000/svg"
                     width="2vw"
                     height="2vh"
-                    viewBox="0 0 40 18"
+                    viewBox="0 0 24 18"
                     fill="none"
                   >
                     <path
@@ -242,7 +179,7 @@ export default function Post() {
           <div className="row">
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5">
               <img
-                src="images/comment1.jpg"
+                src="/images/comment1.jpg"
                 width="170"
                 height="170"
                 className="rounded-circle img-fluid"
@@ -300,7 +237,7 @@ export default function Post() {
           <div className="row mt-5 mb-5">
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5">
               <img
-                src="images/comment2.jpg"
+                src="/images/comment2.jpg"
                 width="170"
                 height="120"
                 className="rounded-circle img-fluid"
@@ -358,7 +295,7 @@ export default function Post() {
           <div className="row">
             <div className="col-xl-2 col-lg-2 col-md-3 col-sm-5">
               <img
-                src="images/comment3.jpg"
+                src="/images/comment3.jpg"
                 width="170"
                 height="170"
                 className="rounded-circle img-fluid"

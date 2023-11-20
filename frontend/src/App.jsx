@@ -21,7 +21,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/post" element={<Post />} />
+          <Route path="/posts/:id" element={<Post />} />
           <Route path="/africa" element={<Africa />} />
           <Route path="/europe" element={<Europe />} />
           <Route path="/asia" element={<Asia />} />
