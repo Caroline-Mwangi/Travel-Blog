@@ -105,6 +105,16 @@ body {
   text-overflow: ellipsis;
 }
 
+.tip-txt {
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 0.99vw;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Change this value to set the number of lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .pst-btn {
   font-size: 1vw;
   letter-spacing: 2.34px;
