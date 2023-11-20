@@ -8,6 +8,7 @@ from rest_framework import routers
 route = routers.DefaultRouter()
 route.register("posts", views.PostView, basename="posts")
 route.register("tips", views.TipView, basename="tips")
+route.register("comments", views.CommentView, basename="comments")
 
 
 urlpatterns = [
