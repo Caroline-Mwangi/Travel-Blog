@@ -17,7 +17,7 @@ export default function DeletePost() {
         type="button"
         class="border-0 bg-transparent "
         data-bs-toggle="modal"
-        data-bs-target="#staticBackdrop"
+        data-bs-target="#staticBackdrop2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ export default function DeletePost() {
 
       <div
         class="modal fade  "
-        id="staticBackdrop"
+        id="staticBackdrop2"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
         tabindex="-1"
