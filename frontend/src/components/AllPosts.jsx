@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import AddPost from "./AddPost";
+import { Link } from "react-router-dom";
 
 export default function AllPosts() {
   const [posts, setPosts] = useState([]);
@@ -12,6 +13,8 @@ export default function AllPosts() {
   useEffect(() => {
     getPosts();
   }, []);
+
+  document.title = "Travel Blog | Posts ";
 
   return (
     <>
@@ -33,8 +36,18 @@ export default function AllPosts() {
       <div className="container-fluid">
         <div className="row">
           {posts.map((post) => (
-            <div className="col-md-4 mb-4">
-              <img src={post.image} className="w-100 h-100" />
+            <div className="col-md-4 mb-4" key={post.id}>
+              <div className="image-posts">
+                <Link to={`/posts/${post.id}`}>
+                  <div className="overlay-posts">
+                    <div className="overlay-posts-title">
+                      <p className="fw-bold">{post.title}</p>
+                      <p className="opacity-50">{post.location}</p>
+                    </div>
+                  </div>
+                  <img src={post.image} className="w-100 h-100" />
+                </Link>
+              </div>
             </div>
           ))}
         </div>

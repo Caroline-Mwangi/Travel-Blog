@@ -53,6 +53,8 @@ export default function Post() {
     });
   };
 
+  document.title = `Travel Blog | ${post.title}`;
+
   return (
     <>
       <div className="container-fluid">

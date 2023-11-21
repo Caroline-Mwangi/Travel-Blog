@@ -1,11 +1,28 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function SAmerica() {
+  const [posts, setPosts] = useState([]);
+
+  const getSAPosts = async () => {
+    const response = await axios.get(
+      "http://127.0.0.1:8000/posts/?continent=South%20America"
+    );
+    setPosts(response.data);
+  };
+
+  useEffect(() => {
+    getSAPosts();
+  }, []);
+
   useEffect(() => {
     const carousel = new bootstrap.Carousel(
       document.getElementById("carouselExampleInterval")
     );
   }, []);
+
+  document.title = "Travel Blog | South America ";
   return (
     <>
       <div className="container-fluid">
@@ -82,54 +99,21 @@ export default function SAmerica() {
 
       <div className="container">
         <div className="row dest-row mt-5">
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
-            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute ">
-              <p className="fw-bold dest-title">THE POST TITLE</p>
-              <p className="text-secondary dest-date">The date</p>
+          {posts.map((post) => (
+            <div className="col-md-4 mb-4" key={post.id}>
+              <div className="image-posts">
+                <Link to={`/posts/${post.id}`}>
+                  <div className="overlay-posts">
+                    <div className="overlay-dest-title">
+                      <p className="fw-bold">{post.title}</p>
+                      <p className="opacity-50">{post.location}</p>
+                    </div>
+                  </div>
+                  <img src={post.image} className="w-100 h-100" />
+                </Link>
+              </div>
             </div>
-            <img src="images/destinations/s-america1.jpg" />
-          </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
-            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute ">
-              <p className="fw-bold dest-title">THE POST TITLE</p>
-              <p className="text-secondary dest-date">The date</p>
-            </div>
-            <img src="images/destinations/s-america5.jpg" />
-          </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
-            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute ">
-              <p className="fw-bold dest-title">THE POST TITLE</p>
-              <p className="text-secondary dest-date">The date</p>
-            </div>
-            <img src="images/destinations/s-america3.jpg" />
-          </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
-            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute ">
-              <p className="fw-bold dest-title">THE POST TITLE</p>
-              <p className="text-secondary dest-date">The date</p>
-            </div>
-            <img src="images/destinations/s-america2.jpg" />
-          </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
-            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute ">
-              <p className="fw-bold dest-title">THE POST TITLE</p>
-              <p className="text-secondary dest-date">The date</p>
-            </div>
-            <img src="images/destinations/s-america4.jpg" />
-          </div>
-          <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
-            <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute ">
-              <p className="fw-bold dest-title">THE POST TITLE</p>
-              <p className="text-secondary dest-date">The date</p>
-            </div>
-            <img src="images/destinations/s-america6.jpg" />
-          </div>
+          ))}
         </div>
       </div>
     </>

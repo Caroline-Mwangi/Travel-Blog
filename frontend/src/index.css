@@ -238,3 +238,45 @@ body {
   font-size: 1vw;
   margin-left: 4vw;
 }
+
+.image-posts {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-posts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-posts:hover .overlay-posts {
+  opacity: 0;
+}
+
+.overlay-posts-title {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 1.7vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.overlay-dest-title {
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  font-size: 1vw;
+  padding: 20px;
+  border-radius: 10px;
+}
