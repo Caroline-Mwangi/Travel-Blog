@@ -2,36 +2,30 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-export default function EditPost() {
+export default function EditTip() {
   const [image, setImage] = useState(null);
   const [title, setTitle] = useState("");
-  const [continent, setContinent] = useState("");
-  const [location, setLocation] = useState("");
   const [content, setContent] = useState("");
 
   const navigate = useNavigate();
   const { id } = useParams();
 
-  let getPost = async () => {
-    const result = await axios.get(`http://127.0.0.1:8000/posts/${id}/`);
+  let getTip = async () => {
+    const result = await axios.get(`http://127.0.0.1:8000/tips/${id}/`);
 
     setImage(result.data.image);
     setTitle(result.data.title);
-    setContinent(result.data.continent);
-    setLocation(result.data.location);
     setContent(result.data.content);
   };
 
   useEffect(() => {
-    getPost();
+    getTip();
   }, []);
 
-  const editAPost = async () => {
+  const editATip = async () => {
     let field = new FormData();
 
     field.append("title", title);
-    field.append("continent", continent);
-    field.append("location", location);
     field.append("content", content);
 
     if (image !== null) {
@@ -40,10 +34,10 @@ export default function EditPost() {
 
     await axios({
       method: "PUT",
-      url: `http://127.0.0.1:8000/posts/${id}/`,
+      url: `http://127.0.0.1:8000/tips/${id}/`,
       data: field,
     }).then((response) => {
-      navigate(`/posts/${id}`);
+      navigate(`/tips/${id}`);
     });
   };
   return (
@@ -82,7 +76,7 @@ export default function EditPost() {
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                EDIT POST
+                EDIT TIP
               </h1>
               <button
                 type="button"
@@ -109,27 +103,12 @@ export default function EditPost() {
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
               />
-              <input
-                type="text"
-                className="form-control mt-3 mb-3 border-black "
-                placeholder="Continent..."
-                name="continent"
-                value={continent}
-                onChange={(e) => setContinent(e.target.value)}
-              />
-              <input
-                type="text"
-                className="form-control mt-3 mb-3 border-black "
-                placeholder="Location..."
-                name="location"
-                value={location}
-                onChange={(e) => setLocation(e.target.value)}
-              />
+
               <textarea
                 className="form-control mt-3 mb-3 border-black"
                 placeholder="Content..."
                 name="content"
-                rows="50"
+                rows="20"
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
               />
@@ -146,9 +125,9 @@ export default function EditPost() {
                 type="button"
                 class="btn btn-primary"
                 data-bs-dismiss="modal"
-                onClick={editAPost}
+                onClick={editATip}
               >
-                Edit Post
+                Edit Tip
               </button>
             </div>
           </div>

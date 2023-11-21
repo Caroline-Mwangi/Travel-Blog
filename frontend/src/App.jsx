@@ -12,6 +12,7 @@ import Antarctica from "./components/destinations/Antarctica";
 import Australia from "./components/destinations/Australia";
 import AllPosts from "./components/AllPosts";
 import Footer from "./components/Footer";
+import Tip from "./components/Tip";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/posts/:id" element={<Post />} />
+          <Route path="/tips/:id" element={<Tip />} />
           <Route path="/africa" element={<Africa />} />
           <Route path="/europe" element={<Europe />} />
           <Route path="/asia" element={<Asia />} />

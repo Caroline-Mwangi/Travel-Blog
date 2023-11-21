@@ -1,21 +1,21 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import DeletePost from "./deletePost";
-import EditPost from "./EditPost";
+import EditTip from "./EditTip";
+import DeleteTip from "./DeleteTip";
 
-export default function Post() {
-  const [post, setPost] = useState([]);
+export default function Tip() {
+  const [tip, setTip] = useState([]);
   const navigate = useNavigate();
   const { id } = useParams();
 
-  const getAPost = async () => {
-    const { data } = await axios.get(`http://127.0.0.1:8000/posts/${id}/`);
-    setPost(data);
+  const getATip = async () => {
+    const { data } = await axios.get(`http://127.0.0.1:8000/tips/${id}/`);
+    setTip(data);
   };
 
   useEffect(() => {
-    getAPost();
+    getATip();
   }, []);
 
   const [comments, setComments] = useState([]);
@@ -53,63 +53,27 @@ export default function Post() {
     });
   };
 
-  document.title = `Travel Blog | ${post.title}`;
+  document.title = `Travel Blog | ${tip.title}`;
 
   return (
     <>
       <div className="container-fluid">
         <div className="container mb-4">
-          <img src={post.image} class="d-block w-100 post-header mb-2" />
-          <div className="d-flex justify-content-between">
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="2vw"
-                height="2vw"
-                viewBox="-12 -2 55 55"
-                fill="none"
-              >
-                <path
-                  d="M31.6667 6.66659H28.3333V4.99992C28.3333 4.55789 28.1577 4.13397 27.8452 3.82141C27.5326 3.50885 27.1087 3.33325 26.6667 3.33325C26.2246 3.33325 25.8007 3.50885 25.4882 3.82141C25.1756 4.13397 25 4.55789 25 4.99992V6.66659H15V4.99992C15 4.55789 14.8244 4.13397 14.5118 3.82141C14.1993 3.50885 13.7754 3.33325 13.3333 3.33325C12.8913 3.33325 12.4674 3.50885 12.1548 3.82141C11.8423 4.13397 11.6667 4.55789 11.6667 4.99992V6.66659H8.33333C7.00725 6.66659 5.73548 7.19337 4.7978 8.13105C3.86012 9.06873 3.33333 10.3405 3.33333 11.6666V31.6666C3.33333 32.9927 3.86012 34.2644 4.7978 35.2021C5.73548 36.1398 7.00725 36.6666 8.33333 36.6666H31.6667C32.9927 36.6666 34.2645 36.1398 35.2022 35.2021C36.1399 34.2644 36.6667 32.9927 36.6667 31.6666V11.6666C36.6667 10.3405 36.1399 9.06873 35.2022 8.13105C34.2645 7.19337 32.9927 6.66659 31.6667 6.66659ZM33.3333 31.6666C33.3333 32.1086 33.1577 32.5325 32.8452 32.8451C32.5326 33.1577 32.1087 33.3333 31.6667 33.3333H8.33333C7.89131 33.3333 7.46738 33.1577 7.15482 32.8451C6.84226 32.5325 6.66667 32.1086 6.66667 31.6666V19.9999H33.3333V31.6666ZM33.3333 16.6666H6.66667V11.6666C6.66667 11.2246 6.84226 10.8006 7.15482 10.4881C7.46738 10.1755 7.89131 9.99992 8.33333 9.99992H11.6667V11.6666C11.6667 12.1086 11.8423 12.5325 12.1548 12.8451C12.4674 13.1577 12.8913 13.3333 13.3333 13.3333C13.7754 13.3333 14.1993 13.1577 14.5118 12.8451C14.8244 12.5325 15 12.1086 15 11.6666V9.99992H25V11.6666C25 12.1086 25.1756 12.5325 25.4882 12.8451C25.8007 13.1577 26.2246 13.3333 26.6667 13.3333C27.1087 13.3333 27.5326 13.1577 27.8452 12.8451C28.1577 12.5325 28.3333 12.1086 28.3333 11.6666V9.99992H31.6667C32.1087 9.99992 32.5326 10.1755 32.8452 10.4881C33.1577 10.8006 33.3333 11.2246 33.3333 11.6666V16.6666Z"
-                  fill="black"
-                  fill-opacity="0.32"
-                />
-              </svg>
-              <span className="opacity-50 fs-5">{post.date}</span>
-            </p>
-            <p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="2vw"
-                height="2vw"
-                viewBox="-8 0 30 30"
-                fill="none"
-              >
-                <path
-                  d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
-                  fill="black"
-                  fill-opacity="0.32"
-                />
-              </svg>
-              <span className="opacity-50 fs-5">{post.location}</span>
-            </p>
-          </div>
+          <img src={tip.image} class="d-block w-100 h-100 post-header mb-2" />
         </div>
 
         <div className="container">
-          <h1 className="fw-bold fs-1 text-center mt-4 mb-5">{post.title}</h1>
+          <h1 className="fw-bold fs-1 text-center mt-4 mb-5">{tip.title}</h1>
           <p className=" fs-5 opacity-75">
-            {post.content}
+            {tip.content}
             <br />
             <br />
           </p>
         </div>
         <div className="container">
-          <div className="d-flex justify-content-between ms-4 me-4">
+          <div className=" d-flex justify-content-between ms-4 me-4">
             <div>
-              <EditPost />
-
-              <DeletePost />
+              <EditTip /> <DeleteTip />
             </div>
             <div>
               <svg

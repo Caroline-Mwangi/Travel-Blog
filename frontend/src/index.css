@@ -280,3 +280,12 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Increase the scale for a zoom effect on hover */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a shadow on hover */
+}
