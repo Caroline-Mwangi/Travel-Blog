@@ -1,9 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Posts() {
   const [posts, setPosts] = useState([]);
+  const [showedPosts, setShowedPosts] = useState(3);
+  const [loaded, setLoaded] = useState(false);
+
+  const navigate = useNavigate();
+
   const getPosts = async () => {
     const response = await axios.get("http://127.0.0.1:8000/posts/");
     setPosts(response.data);
@@ -13,7 +18,17 @@ export default function Posts() {
     getPosts();
   }, []);
 
-  const showThreePosts = posts.slice(-3);
+  // const showThreePosts = posts.slice(-3);
+  const loadMore = () => {
+    if (!loaded) {
+      setShowedPosts(showedPosts + 3);
+      setLoaded(true);
+    } else {
+      navigate("/posts");
+    }
+  };
+
+  const showedPostsGroup = posts.slice(-showedPosts);
 
   return (
     <>
@@ -30,7 +45,7 @@ export default function Posts() {
           </div>
         </div>
 
-        {showThreePosts.map((post, index) => (
+        {showedPostsGroup.map((post, index) => (
           <div key={index} className="row mt-2 mb-5">
             <div
               className={`col-xl-5 col-lg-5 col-md-4 col-sm-6 col-xs-12 ${
@@ -84,9 +99,16 @@ export default function Posts() {
         ))}
 
         <div className="d-flex justify-content-center p-5">
-          <button className="border-0 bg-transparent fw-bold">
-            <span className="ld-pst-btn">Load More</span>
-          </button>
+          {showedPosts < posts.length ? (
+            <button
+              className="border-0 bg-transparent fw-bold"
+              onClick={loadMore}
+            >
+              <span className="ld-pst-btn">
+                {loaded ? "Show All" : "Load More"}
+              </span>
+            </button>
+          ) : null}
         </div>
       </div>
     </>

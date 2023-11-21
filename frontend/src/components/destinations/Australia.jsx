@@ -84,49 +84,49 @@ export default function Australia() {
         <div className="row dest-row mt-5">
           <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
             <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
-              <p className="fw-bold fs-4">THE POST TITLE</p>
-              <p className="text-secondary fs-5">The date</p>
+            <div className="z-2 text-white text-center position-absolute ">
+              <p className="fw-bold dest-title">THE POST TITLE</p>
+              <p className="text-secondary dest-date">The date</p>
             </div>
             <img src="images/destinations/aus1.jpg" />
           </div>
           <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
             <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
-              <p className="fw-bold fs-4">THE POST TITLE</p>
-              <p className="text-secondary fs-5">The date</p>
+            <div className="z-2 text-white text-center position-absolute ">
+              <p className="fw-bold dest-title">THE POST TITLE</p>
+              <p className="text-secondary dest-date">The date</p>
             </div>
             <img src="images/destinations/aus5.jpg" />
           </div>
           <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
             <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
-              <p className="fw-bold fs-4">THE POST TITLE</p>
-              <p className="text-secondary fs-5">The date</p>
+            <div className="z-2 text-white text-center position-absolute ">
+              <p className="fw-bold dest-title">THE POST TITLE</p>
+              <p className="text-secondary dest-date">The date</p>
             </div>
             <img src="images/destinations/aus3.jpg" />
           </div>
           <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
             <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
-              <p className="fw-bold fs-4">THE POST TITLE</p>
-              <p className="text-secondary fs-5">The date</p>
+            <div className="z-2 text-white text-center position-absolute ">
+              <p className="fw-bold dest-title">THE POST TITLE</p>
+              <p className="text-secondary dest-date">The date</p>
             </div>
             <img src="images/destinations/aus2.jpg" />
           </div>
           <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
             <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
-              <p className="fw-bold fs-4">THE POST TITLE</p>
-              <p className="text-secondary fs-5">The date</p>
+            <div className="z-2 text-white text-center position-absolute ">
+              <p className="fw-bold dest-title">THE POST TITLE</p>
+              <p className="text-secondary dest-date">The date</p>
             </div>
             <img src="images/destinations/aus4.jpg" />
           </div>
           <div className="col-xl-4 col-lg-4 col-md-3 mb-5 position-relative overflow-hidden">
             <div className=" overlay z-1 position-absolute h-100 bg-black bg-opacity-75"></div>
-            <div className="z-2 text-white text-center position-absolute top-50 start-50 translate-middle">
-              <p className="fw-bold fs-4">THE POST TITLE</p>
-              <p className="text-secondary fs-5">The date</p>
+            <div className="z-2 text-white text-center position-absolute ">
+              <p className="fw-bold dest-title">THE POST TITLE</p>
+              <p className="text-secondary dest-date">The date</p>
             </div>
             <img src="images/destinations/aus6.jpg" />
           </div>

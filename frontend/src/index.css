@@ -192,11 +192,6 @@ body {
   width: 17vw;
 }
 
-.overtext {
-  top: calc(3.5vw + 4.9vh);
-  left: calc(3.5vw + 3vh);
-}
-
 .image-cont {
   position: relative;
   overflow: hidden;
@@ -230,5 +225,16 @@ body {
 
 .foot {
   margin-top: auto;
-  background-color: rgba(233, 244, 217, 0.4);;
+  background-color: rgba(233, 244, 217, 0.4);
+}
+
+.dest-title {
+  font-size: 1.2vw;
+  margin-top: 8vh;
+  margin-left: 4vw;
+}
+
+.dest-date {
+  font-size: 1vw;
+  margin-left: 4vw;
 }
