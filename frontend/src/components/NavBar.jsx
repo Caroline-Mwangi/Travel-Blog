@@ -2,13 +2,13 @@ export default function NavBar() {
   return (
     <>
       <div className="container-fluid nav-header ">
-        <nav class="navbar navbar-expand-lg bg-body-white">
-          <div class="container-fluid">
-            <a class="navbar-brand nav-title" href="/">
+        <nav className="navbar navbar-expand-lg bg-body-white">
+          <div className="container-fluid">
+            <a className="navbar-brand nav-title" href="/">
               Travel<span className="nav-title2">Diary</span> 
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavDropdown"
@@ -16,13 +16,13 @@ export default function NavBar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav ms-auto me-0">
-                <li class="nav-item dropdown">
+            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul className="navbar-nav ms-auto me-0">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -42,39 +42,39 @@ export default function NavBar() {
                     </svg>
                     <span className="dest">Destinations</span>
                   </a>
-                  <ul class="dropdown-menu">
+                  <ul className="dropdown-menu">
                     <li>
-                      <a class="dropdown-item" href="/africa">
+                      <a className="dropdown-item" href="/africa">
                         Africa
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/europe">
+                      <a className="dropdown-item" href="/europe">
                         Europe
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/asia">
+                      <a className="dropdown-item" href="/asia">
                         Asia
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/northamerica">
+                      <a className="dropdown-item" href="/northamerica">
                         North America
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/southamerica">
+                      <a className="dropdown-item" href="/southamerica">
                         South America
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/antarctica">
+                      <a className="dropdown-item" href="/antarctica">
                         Antarctica
                       </a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/australia">
+                      <a className="dropdown-item" href="/australia">
                         Australia
                       </a>
                     </li>

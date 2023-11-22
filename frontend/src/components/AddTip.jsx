@@ -33,7 +33,7 @@ export default function AddTip() {
     <>
       <button
         type="button"
-        class="btn btn-link link-underline link-underline-opacity-0 opacity-50 fw-bold fs-5 link-underline-opacity-50-hover link-success"
+        className="btn btn-link link-underline link-underline-opacity-0 opacity-50 fw-bold fs-5 link-underline-opacity-50-hover link-success"
         data-bs-toggle="modal"
         data-bs-target="#staticBackdrop"
       >
@@ -41,7 +41,7 @@ export default function AddTip() {
       </button>
 
       <div
-        class="modal fade  "
+        className="modal fade  "
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
@@ -49,20 +49,20 @@ export default function AddTip() {
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-fullscreen">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+        <div className="modal-dialog modal-fullscreen">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="staticBackdropLabel">
                 ADD A NEW TIP
               </h1>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="modal"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
+            <div className="modal-body">
               <img src=" " alt="" />
               <input
                 type="file"
@@ -88,17 +88,17 @@ export default function AddTip() {
                 onChange={(e) => setContent(e.target.value)}
               />
             </div>
-            <div class="modal-footer">
+            <div className="modal-footer">
               <button
                 type="button"
-                class="btn btn-secondary"
+                className="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
                 Close
               </button>
               <button
                 type="button"
-                class="btn btn-primary"
+                className="btn btn-primary"
                 onClick={AddTipInfo}
                 data-bs-dismiss="modal"
               >

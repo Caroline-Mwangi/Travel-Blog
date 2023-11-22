@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import DeletePost from "./deletePost";
+import DeletePost from "./DeletePost";
 import EditPost from "./EditPost";
 
 export default function Post() {
@@ -59,7 +59,7 @@ export default function Post() {
     <>
       <div className="container-fluid">
         <div className="container mb-4">
-          <img src={post.image} class="d-block w-100 post-header mb-2" />
+          <img src={post.image} className="d-block w-100 post-header mb-2" />
           <div className="d-flex justify-content-between">
             <p>
               <svg
@@ -266,7 +266,7 @@ export default function Post() {
           </div>
           <button
             type="button"
-            class="btn btn-success mt-4 mb-5"
+            className="btn btn-success mt-4 mb-5"
             onClick={addCommentInfo}
           >
             Submit
