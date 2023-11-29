@@ -44,6 +44,7 @@ export default function EditPost() {
       data: field,
     }).then((response) => {
       navigate(`/posts/${id}`);
+      window.location.reload();
     });
   };
   return (

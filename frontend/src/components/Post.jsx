@@ -40,6 +40,8 @@ export default function Post() {
     field.append("email", email);
     field.append("comment", comment);
 
+    field.append("post", id);
+
     if (image != null) {
       field.append("image", image);
     }
@@ -49,7 +51,8 @@ export default function Post() {
       url: "http://127.0.0.1:8000/comments/",
       data: field,
     }).then((response) => {
-      navigate("/");
+      navigate(`/posts/${id}`);
+      window.location.reload();
     });
   };
 

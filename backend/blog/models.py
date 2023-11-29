@@ -26,6 +26,7 @@ class Comment(models.Model):
     date = models.DateField(auto_now_add=True)
     email = models.EmailField(max_length=300, null=False, blank=False)
     comment = models.TextField(null=False, blank=False)
+    post = models.ForeignKey("Post", on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name

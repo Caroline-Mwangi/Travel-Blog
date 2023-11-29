@@ -38,6 +38,7 @@ export default function EditTip() {
       data: field,
     }).then((response) => {
       navigate(`/tips/${id}`);
+      window.location.reload();
     });
   };
   return (
