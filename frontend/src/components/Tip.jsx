@@ -71,7 +71,7 @@ export default function Tip() {
           </p>
         </div>
         <div className="container">
-          <div className=" d-flex justify-content-between ms-4 me-4">
+          <div className=" d-flex justify-content-between ms-3 me-4">
             <div>
               <EditTip /> <DeleteTip />
             </div>

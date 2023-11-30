@@ -82,13 +82,23 @@ export default function AddPost() {
                 name="title"
                 onChange={(e) => setTitle(e.target.value)}
               />
-              <input
-                type="text"
+              <select
                 className="form-control mt-3 mb-3 border-black "
-                placeholder="Continent..."
                 name="continent"
                 onChange={(e) => setContinent(e.target.value)}
-              />
+              >
+                <option value="--Click to select a continent--">
+                  --Click to select a continent--
+                </option>
+                <option value="Africa">Africa</option>
+                <option value="Europe">Europe</option>
+                <option value="Asia">Asia</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Antarctica">Antarctica</option>
+                <option value="Australia">Australia</option>
+              </select>
+
               <input
                 type="text"
                 className="form-control mt-3 mb-3 border-black "

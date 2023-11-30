@@ -62,7 +62,7 @@ export default function Tips() {
                           <div className="card">
                             <img src={tip.image} className="card-img-top" />
                             <div className="card-body">
-                              <h5 className="card-title fw-bold fs-3 text-uppercase text-center">
+                              <h5 className="card-title fw-bold fs-5 text-uppercase text-center">
                                 {tip.title}
                               </h5>
                               <p className="tip-txt card-text opacity-50">
