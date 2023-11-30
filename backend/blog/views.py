@@ -23,5 +23,14 @@ class TipView(viewsets.ModelViewSet):
     serializer_class = TipSerializer
     
 class CommentView(viewsets.ModelViewSet):
-    queryset = Comment.objects.all()
+    
     serializer_class = CommentSerializer
+    
+    def get_queryset(self):
+        post = self.request.query_params.get('post', None)
+        queryset = Comment.objects.all()
+        
+        if post:
+            queryset = queryset.filter(post=post)
+        return queryset
+    
